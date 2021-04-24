@@ -31,7 +31,7 @@ For subscriptions details, visit [IEX - Flexible, scalable pricing](https://iexc
 - Usage is measured based on message counts which  depends on API Call and associated weight
 - Example [Company - API Call](https://iexcloud.io/docs/api/#company) has a weight of 1 for each Symbol
 
-Additional details about usage calculations available in [Data Weight - section](https://iexcloud.io/docs/api/#authentication) as well as best practice about storing and sharing [Private & Public Secret Key](https://iexcloud.io/docs/api/#authentication)
+Additional details about usage calculations available in [Data Weight - section](https://iexcloud.io/docs/api/#how-credits-work) as well as best practice about storing and sharing [Private & Public Secret Key](https://iexcloud.io/docs/api/#authentication)
 
 ## Installation
 
@@ -50,7 +50,7 @@ List of parameters and their valid values:
 -  iex_sk : `IEX Cloud API` **Secret Token**.
 
    *Secret Token* is available to use via Account Console and assigned the variable **sk** in the documentation. e.g. sk <- "sk_xxxxxx".
-   Please note that term "*Secret Token*" and "*Secret Key*" are used interchangeably in `Riex` documentaion  
+   Please note that term "*Secret Token*" and "*Secret Key*" are used interchangeably in `Riex` documentation  
 
    Keep your **Secret Token** safe. Your **Secret Token** can make any API call on behalf of your account, 
    including changes that may impact billing such as enabling pay-as-you-go charges. 
@@ -93,6 +93,12 @@ Generate Barchart
 ```r
 barChart(TSLA)
 ```
+```{r, echo=FALSE, message=FALSE, fig.cap='TSLA 6 Months Chart', fig.align='center'}
+knitr::include_graphics("./TSLA_6M_Chart.png")
+```
+
+<!--![TSLA 6 Months Chart](/Users/Myriam/Documents/R/Riex/vignettes/TSLA_6M_Chart.png)-->
+
 To check available themes to customize  visualization
 
 ```r
@@ -200,6 +206,12 @@ To check current directory path:
 ```r
 getwd()
 ```
+
+```{r, echo=FALSE, message=FALSE, fig.cap='TSLA Logo', fig.align='center'}
+knitr::include_graphics("./TSLA.png")
+```
+<!--![TSLA Logo](/Users/Myriam/Documents/R/Riex/vignettes/TSLA.png)-->
+
 ## Account
 
 Visit [IEX Cloud API - Account Section](https://iexcloud.io/docs/api/#account) for more details.
@@ -257,4 +269,11 @@ iex.monthly.usage(sk)
 ## Quote of the Day and Everyday !
 
 > "He who gives up [code] safety for [code] speed deserves neither."
-([via](https://twitter.com/hadleywickham/status/504368538874703872))
+- [Hadley Wickham](https://twitter.com/hadleywickham/status/504368538874703872)
+
+
+```{r, echo=FALSE, message=FALSE, fig.cap='Hadley Wickham Quote', fig.align='center'}
+knitr::include_graphics("./HadleyWickham_Quote.png")
+```
+
+<!--![Hadley Wickham Quote](/Users/Myriam/Documents/R/Riex/vignettes/HadleyWickham_Quote.png)-->
